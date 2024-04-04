@@ -1,0 +1,52 @@
+﻿<Window x:Class="RealtyMarket.ProfileWindow"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:RealtyMarket"
+      mc:Ignorable="d" 
+         Title="ProfileWindow" Height="450" Width="600">
+
+    <Grid Background="#FF313B77">
+        <Image Source="/RealtyMarket;component/Images/saransk.jpg" Margin="10,7,488,358" />
+        <!-- Заголовок окна -->
+        <TextBlock Text="Профиль" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0" FontSize="20" FontWeight="Bold"/>
+
+        <!-- Поля с данными пользователя -->
+        <StackPanel VerticalAlignment="Center" Margin="20">
+            <!-- Кнопка "Изменить данные профиля" -->
+            <!-- Кнопка "Изменить данные профиля" -->
+            <!-- Кнопка "Изменить данные профиля" -->
+            <!-- Кнопка "Изменить данные профиля" -->
+            <Button Content="Изменить данные профиля" Click="EditProfileButton_Click" Background="Black" Foreground="#FF0056FF" Width="224" Height="33"/>
+            <TextBlock x:Name="PhoneNumberTextBlock" Margin="0,0,0,10" />
+            <TextBlock x:Name="FullNameTextBlock" Margin="0,0,0,10" />
+            <Label Content="Номер телефона:" Foreground="Black" Width="558" FontWeight="Bold"/>
+            <Label Content="ФИО:" Foreground="Black" FontWeight="Bold"/>
+
+            <Label Content="Текущий пароль:" Foreground="Black" FontWeight="Bold"/>
+            <TextBlock x:Name="CurrentPasswordTextBlock" Margin="0,0,0,10" />
+
+            <!-- Кнопка "Изменить данные профиля" -->
+        </StackPanel>
+
+        <!-- Кнопка "Разместить объявление" -->
+
+        <!-- Кнопка "Выход из учетной записи" -->
+        <Button Content="Выход из учетной записи" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,20,370" Click="LogoutButton_Click" Background="Black" Foreground="#FF0056FF" Width="151" Height="37"/>
+
+        <!-- Подпись "Мои объявления" -->
+
+        <!-- Список под объявления -->
+        <ListBox x:Name="MyAdsListBox" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="20,50,0,20">
+            <!-- Дополните этот блок элементов управления в соответствии с вашей логикой -->
+        </ListBox>
+
+        <!-- Кнопка "Удалить объявление" -->
+
+        <!-- Кнопка "Редактировать объявление" -->
+        <TextBox x:Name="NumberBox" HorizontalAlignment="Left" Margin="170,216,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="NameBox" HorizontalAlignment="Left" Margin="170,239,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="PasswordBox" HorizontalAlignment="Left" Margin="170,262,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+    </Grid>
+</Window>
